@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&family=Poppins:wght@400;500;700&family=Roboto:wght@400;700&display=swap');
+
+/* Resets */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: white;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 1.25rem;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color : var(--primary-text-color);
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 20px;
+    /* font-weight: bold; */
+    color: var(--secondary-text-color);
+    /* font-weight: 50; */
+}
+
+/* Utility Classes */
+.flex {
+    display: flex;
+    align-items: center;
+}
+.container {
+    padding-inline: var(--padding-inline-section);
+}
+
+.primary-button {
+    background-color: var(--accent-color);
+    border-radius: .375rem;
+    font-weight: 700;
+    color: white;
+    padding: .5rem 1rem;  
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+    text-align: center;
+    font-size: 1.25rem;
+    border-color: black;
+}
+
+.primary-button:hover {
+    background-color: var(--accent-color-dark);
+}
+
+
+/* Styling */
+.head-para {
+    margin: 1rem ;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.head-div {
+    margin: 0;
+}
+
+.main-div {
+    background-color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    width:26.875rem;
+    margin: 10px auto;
+    margin-bottom: 1rem;
+    border-radius: 16px;
+}
+
+.btn-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input[class = "input"] {
+    width: 23.75rem;
+    height: 45px ;
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25rem;
+    border-color: black;
+}
+
+input[class = "input"]:hover {
+    border-color: var(--accent-color);
+}
+
+.para {
+    text-align: center;
+}
+
+.switch {
+    text-align: center;
+    margin-top: 1.35rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+
+input:focus, button:focus {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.alert {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 430px) {
+    .btn-div {
+        position: absolute;
+        left: 156px;
+    }
+
+    .head-div {
+        position: relative;
+        right: .3125rem;
+    }
+}
+
+
+@media (max-width: 410px) {
+    .btn-div {
+        position: absolute;
+        left: 156px;
+    }
+
+    .head-div {
+        position: relative;
+        left: 28px;
+    }
+}
+
+@media (max-width: 360px) {
+    .btn-div {
+        position: absolute;
+        /* left: 178px; */
+    }
+
+    .head-div {
+        position: relative;
+        left: 70px;
+    }
+}
+
+@media (max-width: 340px) {
+    .btn-div {
+        position: absolute;
+        left: 156px;
+    }
+
+    .head-div {
+        position: relative;
+        left: 70px;
+    }
+}
